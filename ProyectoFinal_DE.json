@@ -26553,7 +26553,7 @@
     {
       "parameters": {
         "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
-        "text": "=💬 Recordatorios desactivados exitosamente.",
+        "text": "Acceso Bloqueado Exitosamente",
         "additionalFields": {
           "appendAttribution": false
         }
@@ -27292,7 +27292,13 @@
             "index": 0
           }
         ],
-        [],
+        [
+          {
+            "node": "Veri OPC18",
+            "type": "main",
+            "index": 0
+          }
+        ],
         [
           {
             "node": "Veri OPC16",
@@ -31824,7 +31830,7 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "88b73a18-5fc5-4459-bbbb-227a54a10736",
+  "versionId": "79125c4c-ae4c-4883-98a5-836237feaa1d",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "9df5d91811fdb3d73aea278702e0fafc82772a4c193fde8132a4495c1e55230c"
