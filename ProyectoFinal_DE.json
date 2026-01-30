@@ -560,29 +560,6 @@
                 },
                 "conditions": [
                   {
-                    "id": "30c21ae0-4781-47e7-b732-6508c9a022a6",
-                    "leftValue": "={{ $json.pantalla_actual }}",
-                    "rightValue": "MENU_ADMIN",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              }
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 3
-                },
-                "conditions": [
-                  {
                     "id": "f79ccd8b-4cc7-494b-bc36-3c64662ae483",
                     "leftValue": "={{ $json.pantalla_actual }}",
                     "rightValue": "CANCELAR",
@@ -664,6 +641,31 @@
                 ],
                 "combinator": "and"
               }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "30c21ae0-4781-47e7-b732-6508c9a022a6",
+                    "leftValue": "={{ $json.pantalla_actual }}",
+                    "rightValue": "ADMIN_BLOQUEO",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Bloqueo"
             },
             {
               "conditions": {
@@ -1514,8 +1516,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        448,
-        1392
+        528,
+        912
       ],
       "id": "b43d122b-8968-43c4-a09b-9c02f5e444bb",
       "name": "AYUDA",
@@ -1537,8 +1539,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        608,
-        1392
+        688,
+        912
       ],
       "id": "07d07009-ab52-46ae-b52b-ef42af364e21",
       "name": "Mensaje Ayuda",
@@ -9461,8 +9463,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        464,
-        1728
+        544,
+        1248
       ],
       "id": "587a4e4c-03d5-4171-890a-28e1a62ce0f3",
       "name": "Menú Tareas",
@@ -9484,8 +9486,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        608,
-        1728
+        688,
+        1248
       ],
       "id": "e78bb45b-d385-46d4-bef0-1afd11ca5f69",
       "name": "Menú Tareas1",
@@ -15951,8 +15953,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        2288,
-        1840
+        2032,
+        1408
       ],
       "id": "11a72404-738a-4673-b0e2-8bdeac0dbe7a",
       "name": "Menú Habitos",
@@ -15974,8 +15976,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2432,
-        1840
+        2176,
+        1408
       ],
       "id": "476cd926-add8-44d5-ad90-9b0ccf29d976",
       "name": "Menú Habitos1",
@@ -20684,8 +20686,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1600,
-        2160
+        1824,
+        1712
       ],
       "id": "ff06fb25-d53a-4655-862e-b762f344bce3",
       "name": "Agenda10",
@@ -20718,8 +20720,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1744,
-        2160
+        1968,
+        1712
       ],
       "id": "91e01c36-ddb8-4175-86d8-15311f821337",
       "name": "Tareas3",
@@ -20752,8 +20754,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1888,
-        2160
+        2112,
+        1712
       ],
       "id": "94c20371-8479-45c0-aba9-c52463c8be5f",
       "name": "Habitos3",
@@ -20773,8 +20775,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2224,
-        2160
+        2448,
+        1712
       ],
       "id": "7204a313-2d52-42d2-b7e8-f3f7ae795cb0",
       "name": "Code in JavaScript4"
@@ -20799,8 +20801,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        2048,
-        2160
+        2272,
+        1712
       ],
       "id": "d72fdef8-2b6a-4e8b-9c5f-2a6f85572378",
       "name": "Usuarios",
@@ -20824,8 +20826,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2400,
-        2160
+        2624,
+        1712
       ],
       "id": "49875c53-0d9d-4f65-a2f6-00787b546897",
       "name": "Hasta Luego1",
@@ -20932,8 +20934,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        2240,
-        1984
+        1984,
+        1552
       ],
       "id": "dfe7b270-9ffd-4f78-a51f-da11efb94d03",
       "name": "Menú Listas",
@@ -20955,8 +20957,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2384,
-        1984
+        2128,
+        1552
       ],
       "id": "63884ca0-528d-435f-917d-d951b2cc09ac",
       "name": "Menu Listas",
@@ -22103,8 +22105,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5872,
-        15376
+        5456,
+        16720
       ],
       "id": "2e798c55-fd7f-4b0c-9529-6f69e2e18925",
       "name": "Act Paso57",
@@ -22312,8 +22314,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6192,
-        15312
+        5776,
+        16656
       ],
       "id": "2de0b6b1-9ab2-44b8-b27f-8773349c554a",
       "name": "Almacenar15",
@@ -22352,8 +22354,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        5264,
-        15200
+        4848,
+        16544
       ],
       "id": "dfaae600-1bce-40f4-8110-2a0b98119a4b",
       "name": "If32"
@@ -22499,8 +22501,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5744,
-        15104
+        5328,
+        16448
       ],
       "id": "c02a88d1-c4bf-40c7-8aeb-51cbb2be5b94",
       "name": "Act Paso61",
@@ -22522,8 +22524,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5888,
-        15104
+        5472,
+        16448
       ],
       "id": "237510d1-0dc9-4870-9f62-0f2e10f01845",
       "name": "Menú Principal22",
@@ -22546,8 +22548,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5600,
-        15104
+        5184,
+        16448
       ],
       "id": "31a7e79f-2cf6-44b5-a72e-4e931c27660e",
       "name": "Cancelado16",
@@ -22654,8 +22656,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6128,
-        15552
+        5712,
+        16896
       ],
       "id": "cc7e3797-8c92-4684-aa6d-56e9d1898b9b",
       "name": "Act Paso62",
@@ -22832,8 +22834,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6288,
-        15552
+        5872,
+        16896
       ],
       "id": "dc3c1076-233f-47a8-8d6d-7a067d2702c6",
       "name": "Almacenar19",
@@ -22855,8 +22857,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6432,
-        15552
+        6016,
+        16896
       ],
       "id": "eb9204ba-8387-4dd2-8306-76c3a1ea4140",
       "name": "Hora Cita3",
@@ -22967,8 +22969,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        5632,
-        15616
+        5216,
+        16960
       ],
       "id": "1cc86a31-7d12-434e-80c6-17648003594b",
       "name": "Pasos Nueva Lista"
@@ -22984,8 +22986,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6336,
-        15312
+        5920,
+        16656
       ],
       "id": "63979967-1270-430a-8620-13058ac19e9a",
       "name": "Tipopregunta",
@@ -23004,8 +23006,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        6064,
-        15312
+        5648,
+        16656
       ],
       "id": "3e5a9b4d-2385-436d-9b54-88f384bddb21",
       "name": "Code in JavaScript6"
@@ -23038,8 +23040,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        6032,
-        15760
+        5616,
+        17104
       ],
       "id": "2d6b8d96-2511-4466-8b04-f109f495b525",
       "name": "If33"
@@ -23114,8 +23116,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6384,
-        15904
+        5968,
+        17248
       ],
       "id": "fab0835b-2daa-4fed-8aec-6e03376e99a5",
       "name": "Append row in sheet3",
@@ -23133,8 +23135,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        6208,
-        15904
+        5792,
+        17248
       ],
       "id": "6b55e1c1-398d-4b87-8f23-a5232e34c260",
       "name": "Code in JavaScript7"
@@ -23150,8 +23152,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6560,
-        15904
+        6144,
+        17248
       ],
       "id": "f68f6e2a-4ef7-4c60-abc9-7e3f44c8671b",
       "name": "Hora Cita4",
@@ -23235,8 +23237,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6576,
-        15552
+        6160,
+        16896
       ],
       "id": "814090b4-9d09-4ab4-9f9e-9541054da629",
       "name": "Append row in sheet4",
@@ -23387,8 +23389,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6240,
-        15728
+        5824,
+        17072
       ],
       "id": "c2ff96a8-3a00-4ab4-a6bf-a63e10b7fa87",
       "name": "Almacenar16",
@@ -23427,8 +23429,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        1488,
-        2320
+        1712,
+        1872
       ],
       "id": "7bf2dfbb-dd4d-4c06-99d3-fef361808772",
       "name": "If34"
@@ -23444,8 +23446,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1856,
-        2336
+        2080,
+        1888
       ],
       "id": "12adb94f-ca99-4f4f-a604-509a4192b908",
       "name": "Menú Principal21",
@@ -23468,8 +23470,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1648,
-        2336
+        1872,
+        1888
       ],
       "id": "428c89c0-d639-4c63-be42-ad50a9594e62",
       "name": "Hasta Luego2",
@@ -23492,8 +23494,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        608,
-        1568
+        688,
+        1088
       ],
       "id": "7d3937e5-7c89-41c2-8e05-2db1785d778d",
       "name": "Menú Agenda",
@@ -23600,8 +23602,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        448,
-        1568
+        528,
+        1088
       ],
       "id": "4a1ec2df-2109-4acf-87f9-625942b8d711",
       "name": "Menú Agendar",
@@ -23623,8 +23625,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4992,
-        13840
+        4832,
+        15440
       ],
       "id": "247209d9-4d2c-437f-b3fd-cf608bfc84de",
       "name": "OPC Invalido22",
@@ -23664,8 +23666,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        4832,
-        14000
+        4672,
+        15600
       ],
       "id": "4aee6a5f-266f-4f2a-ad30-56934398ad72",
       "name": "Veri OPC16"
@@ -23718,6 +23720,29 @@
                 ],
                 "combinator": "and"
               }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a55f9e23-bd51-42d4-85bf-9e6f0a3c5397",
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "9",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
             }
           ]
         },
@@ -23726,8 +23751,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        5040,
-        14096
+        4880,
+        15696
       ],
       "id": "696cb63a-7a80-4f12-b9bd-45b0b3add131",
       "name": "Switch"
@@ -23760,8 +23785,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        1184,
-        2784
+        1824,
+        2256
       ],
       "id": "1a07c2fb-0558-4c7c-a20b-8ab2755834ef",
       "name": "If35"
@@ -23777,8 +23802,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1680,
-        2912
+        2336,
+        2368
       ],
       "id": "5e8080f1-7917-4c42-af21-6ce9f38e49c4",
       "name": "Menú Principal24",
@@ -23801,8 +23826,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5872,
-        13904
+        5712,
+        15504
       ],
       "id": "b8bbcd8a-7c7c-4b6d-9b27-fa87da2b6e99",
       "name": "Menú Principal25",
@@ -23825,8 +23850,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5568,
-        13952
+        5408,
+        15552
       ],
       "id": "8cc5d1d6-b726-44ef-b95a-f7fb4427e786",
       "name": "Hasta Luego4",
@@ -23849,8 +23874,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5840,
-        14144
+        5888,
+        15696
       ],
       "id": "d5306714-0694-4057-8e11-268d835fa6bd",
       "name": "Menú Principal26",
@@ -23873,8 +23898,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5616,
-        14160
+        5664,
+        15712
       ],
       "id": "8b900a81-f189-448e-858b-bfa244c77b55",
       "name": "Hasta Luego5",
@@ -23981,8 +24006,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5200,
-        13952
+        5040,
+        15552
       ],
       "id": "9bd31a0d-a35a-4857-9b45-414e3ef01dad",
       "name": "AYUDA1",
@@ -24088,8 +24113,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5184,
-        14256
+        5232,
+        15808
       ],
       "id": "aea5c423-d4bc-44d7-871e-a0533af73c38",
       "name": "AYUDA2",
@@ -24176,8 +24201,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5408,
-        13952
+        5248,
+        15552
       ],
       "id": "6da951ea-55b5-4f90-9041-6628f9898b90",
       "name": "Update row in sheet1",
@@ -24263,8 +24288,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5392,
-        14240
+        5440,
+        15792
       ],
       "id": "28ef224d-35cb-42f0-851f-a8b99c4c2fb8",
       "name": "Update row in sheet2",
@@ -24435,8 +24460,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1488,
-        2608
+        2112,
+        2208
       ],
       "id": "33fa2376-460f-400a-979a-847b1a40dd17",
       "name": "Menú Admin1",
@@ -24458,8 +24483,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1440,
-        2912
+        2096,
+        2368
       ],
       "id": "0154a4a7-7be4-4247-a189-38052ce8d854",
       "name": "No admin",
@@ -24482,8 +24507,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1648,
-        2608
+        2272,
+        2208
       ],
       "id": "dadcd952-9c73-438c-b526-0c0be2edb667",
       "name": "Menú Config",
@@ -24506,8 +24531,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6672,
-        15728
+        6256,
+        17072
       ],
       "id": "5d520484-ecfb-4eed-88ca-18a3a0b90f84",
       "name": "Menú Listas1",
@@ -24530,8 +24555,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6480,
-        15728
+        6064,
+        17072
       ],
       "id": "dfdf6190-2953-4bf2-8d67-07cf945e5476",
       "name": "Lista Creada",
@@ -24571,8 +24596,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1040,
-        1712
+        1120,
+        1216
       ],
       "id": "2a481ed5-5cc0-4324-bff3-3483674b12e4",
       "name": "Agenda12",
@@ -24613,8 +24638,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1184,
-        1712
+        1264,
+        1216
       ],
       "id": "e16cea8e-849a-4481-b129-ac7523a29759",
       "name": "Tareas4",
@@ -24655,8 +24680,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1328,
-        1712
+        1408,
+        1216
       ],
       "id": "7ea2312b-5327-4cde-bcb3-76d9e8b24ce4",
       "name": "Habitos4",
@@ -24676,8 +24701,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1504,
-        1712
+        1584,
+        1216
       ],
       "id": "3e98d316-65a6-4204-a409-ae7a68543797",
       "name": "Code in JavaScript8"
@@ -24693,8 +24718,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1712,
-        1712
+        1792,
+        1216
       ],
       "id": "ac5eaa2f-285a-45f9-bf4c-3b72370272da",
       "name": "Recordatorio Usuario",
@@ -24717,8 +24742,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2608,
-        2160
+        2832,
+        1712
       ],
       "id": "7be3810b-fb59-439d-a0d2-842b1083def0",
       "name": "Menú Principal23",
@@ -24765,8 +24790,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1904,
-        1712
+        1984,
+        1216
       ],
       "id": "25d559a8-62c7-4f61-8e20-c9272a45af31",
       "name": "Menú Principal27",
@@ -25965,6 +25990,1148 @@
       ],
       "id": "fd625af8-f006-49b0-88cb-fa61d48e0cd7",
       "name": "RecorrerListas1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "f3a835c5-fe8c-4cf2-877e-c42485575441",
+              "leftValue": "={{ $('Obtener Usuarios').item.json.rol }}",
+              "rightValue": "ADMIN",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        880,
+        2528
+      ],
+      "id": "67df6a46-e0d8-4257-8712-b10dd721d938",
+      "name": "If39"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=\n📋 Menú principal\n0️⃣ Ayuda\n1️⃣ Agenda (citas)\n2️⃣ Tareas\n3️⃣ Recordatorios\n4️⃣ Hábitos\n5️⃣ Listas\n6️⃣ Reportes\n7️⃣ Configuración\n8️⃣ Administrador\n9️⃣ Salir\n\n✨ Estoy atento, elige una opción y seguimos 😉",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1392,
+        2640
+      ],
+      "id": "19f018a5-8151-403c-b072-75782abfb6ff",
+      "name": "Menú Principal30",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1173250165,
+          "mode": "list",
+          "cachedResultName": "estado_usuario",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=1173250165"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+            "paso_actual": "0",
+            "pantalla_actual": "ADMIN_BLOQUEO",
+            "timestamp_ultima_inteacción": "={{ new Date().toISOString() }}"
+          },
+          "matchingColumns": [
+            "telegram_user"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales",
+              "displayName": "datos_parciales",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "timestamp_ultima_inteacción",
+              "displayName": "timestamp_ultima_inteacción",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1168,
+        2480
+      ],
+      "id": "6c8182db-180a-4b52-926a-ccac3d2237fc",
+      "name": "Menú Admin",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=💬 No cuentas con permisos de administrador.",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1152,
+        2640
+      ],
+      "id": "30afc5b2-73bd-4521-8e1a-1b29a214c81b",
+      "name": "No admin1",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=Bienvenido, administrador.\n¿Qué te gustaría hacer ahora? 👇\n\n1️⃣ Activar Acceso.\n2️⃣ Bloquear Acceso.\n9️⃣ Volver al menú principal\n\n✍️ Solo escribe el número de la opción que quieras usar",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1328,
+        2480
+      ],
+      "id": "55e8d872-c56b-477e-bf2f-78caff5d6492",
+      "name": "Menú Config1",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=👋 ¡Hola Davisson!\nSoy AgendaBot 🤖✨\n\nEstoy aquí para ayudarte a organizar tus citas, tareas y recordatorios de forma fácil y sin enredos.\n\n🕒 Puedes escribirme en cualquier momento.\n👉 Para continuar, solo escribe el número de la opción que quieras usar.\n\n📋 Menú principal\n0️⃣ Ayuda\n1️⃣ Agenda (citas)\n2️⃣ Tareas\n3️⃣ Recordatorios\n4️⃣ Hábitos\n5️⃣ Listas\n6️⃣ Reportes\n7️⃣ Configuración\n8️⃣ Administrador\n9️⃣ Salir\n\n🚀 Elige una opción y empezamos",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5552,
+        15984
+      ],
+      "id": "13cc6e74-33e4-4969-adb7-d63ffbf90c60",
+      "name": "Menú Principal33",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1173250165,
+          "mode": "list",
+          "cachedResultName": "estado_usuario",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=1173250165"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+            "paso_actual": "0",
+            "pantalla_actual": "MENU_SELECCION",
+            "timestamp_ultima_inteacción": "={{ new Date().toISOString() }}"
+          },
+          "matchingColumns": [
+            "telegram_user"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales",
+              "displayName": "datos_parciales",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "timestamp_ultima_inteacción",
+              "displayName": "timestamp_ultima_inteacción",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5280,
+        16000
+      ],
+      "id": "5aab41c1-f5d0-41b2-8a8e-d09b06421b77",
+      "name": "AYUDA5",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=😅 Ups, {{ $('Telegram Trigger').item.json.message.chat.first_name }}, ese número no está dentro de las opciones disponibles.\n\n🔢 Asegúrate de que esté dentro del menú, ¡así avanzamos sin problema!\n\n1️⃣ Activar recordatorios\n2️⃣ Desactivar recordatorios\n9️⃣ Volver al menú principal\n\n✍️ Solo escribe el número de la opción que quieras usar",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5104,
+        14384
+      ],
+      "id": "8a46e1d1-a493-47d7-b75f-b49dad4eef6f",
+      "name": "OPC Invalido24",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "799b6e2d-3eb6-4300-9d8f-97b1e1c66977",
+              "leftValue": "={{ !isNaN($('Telegram Trigger').item.json.message.text) && ((Number($('Telegram Trigger').item.json.message.text) >= 1 && Number($('Telegram Trigger').item.json.message.text) <= 2) || Number($('Telegram Trigger').item.json.message.text) === 9)}}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        4944,
+        14544
+      ],
+      "id": "4bc97991-5acd-4d49-adf6-760579d9d293",
+      "name": "Veri OPC18"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "1",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "71c271e0-019e-4e32-8615-538d15e03717"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "d435da4b-0c9a-4275-bd74-0db70494c30a",
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "2",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a55f9e23-bd51-42d4-85bf-9e6f0a3c5397",
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "9",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        5152,
+        14640
+      ],
+      "id": "44ffe073-cc2c-4a93-a483-0834d11de779",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=👋 ¡Hola Davisson!\nSoy AgendaBot 🤖✨\n\nEstoy aquí para ayudarte a organizar tus citas, tareas y recordatorios de forma fácil y sin enredos.\n\n🕒 Puedes escribirme en cualquier momento.\n👉 Para continuar, solo escribe el número de la opción que quieras usar.\n\n📋 Menú principal\n0️⃣ Ayuda\n1️⃣ Agenda (citas)\n2️⃣ Tareas\n3️⃣ Recordatorios\n4️⃣ Hábitos\n5️⃣ Listas\n6️⃣ Reportes\n7️⃣ Configuración\n8️⃣ Administrador\n9️⃣ Salir\n\n🚀 Elige una opción y empezamos",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5984,
+        14448
+      ],
+      "id": "c215b093-4f66-4afa-ad35-b450b8cb2217",
+      "name": "Menú Principal31",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Acceso Permitido al Sistema",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5680,
+        14496
+      ],
+      "id": "82b7ad0b-7831-4460-b32d-ce2f1abeed55",
+      "name": "Hasta Luego6",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=👋 ¡Hola Davisson!\nSoy AgendaBot 🤖✨\n\nEstoy aquí para ayudarte a organizar tus citas, tareas y recordatorios de forma fácil y sin enredos.\n\n🕒 Puedes escribirme en cualquier momento.\n👉 Para continuar, solo escribe el número de la opción que quieras usar.\n\n📋 Menú principal\n0️⃣ Ayuda\n1️⃣ Agenda (citas)\n2️⃣ Tareas\n3️⃣ Recordatorios\n4️⃣ Hábitos\n5️⃣ Listas\n6️⃣ Reportes\n7️⃣ Configuración\n8️⃣ Administrador\n9️⃣ Salir\n\n🚀 Elige una opción y empezamos",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        6160,
+        14640
+      ],
+      "id": "44b24418-5e17-46b8-b6ed-1ab98dc9418d",
+      "name": "Menú Principal32",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=💬 Recordatorios desactivados exitosamente.",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5936,
+        14656
+      ],
+      "id": "7f37cce1-ed9e-42ad-92d3-407f25b9559c",
+      "name": "Hasta Luego7",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1173250165,
+          "mode": "list",
+          "cachedResultName": "estado_usuario",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=1173250165"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+            "paso_actual": "0",
+            "pantalla_actual": "MENU_SELECCION",
+            "timestamp_ultima_inteacción": "={{ new Date().toISOString() }}"
+          },
+          "matchingColumns": [
+            "telegram_user"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales",
+              "displayName": "datos_parciales",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "timestamp_ultima_inteacción",
+              "displayName": "timestamp_ultima_inteacción",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5312,
+        14496
+      ],
+      "id": "57017e56-70cd-40b5-b4fe-1b3666253d5f",
+      "name": "AYUDA3",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1173250165,
+          "mode": "list",
+          "cachedResultName": "estado_usuario",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=1173250165"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+            "paso_actual": "0",
+            "pantalla_actual": "MENU_SELECCION",
+            "timestamp_ultima_inteacción": "={{ new Date().toISOString() }}"
+          },
+          "matchingColumns": [
+            "telegram_user"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales",
+              "displayName": "datos_parciales",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "timestamp_ultima_inteacción",
+              "displayName": "timestamp_ultima_inteacción",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5504,
+        14752
+      ],
+      "id": "3ac37ae8-f946-4f21-87e8-279e860e85c3",
+      "name": "AYUDA4",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?gid=92232691#gid=92232691",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 92232691,
+          "mode": "list",
+          "cachedResultName": "Usuarios",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=92232691"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "permitido": "SI",
+            "rol": "USUARIO"
+          },
+          "matchingColumns": [
+            "rol"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "nombre",
+              "displayName": "nombre",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "rol",
+              "displayName": "rol",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "permitido",
+              "displayName": "permitido",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "fecha_creacion",
+              "displayName": "fecha_creacion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5520,
+        14496
+      ],
+      "id": "a2a40ef6-1f68-4e07-9065-7dd37015ea1e",
+      "name": "Update row in sheet3",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?gid=92232691#gid=92232691",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 92232691,
+          "mode": "list",
+          "cachedResultName": "Usuarios",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=92232691"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "rol": "USUARIO",
+            "permitido": "NO"
+          },
+          "matchingColumns": [
+            "rol"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "nombre",
+              "displayName": "nombre",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "rol",
+              "displayName": "rol",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "permitido",
+              "displayName": "permitido",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "fecha_creacion",
+              "displayName": "fecha_creacion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5712,
+        14736
+      ],
+      "id": "bf1ef2a9-8957-4544-8c45-c7c726df3fb9",
+      "name": "Update row in sheet4",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=👋 ¡Hola Davisson!\nSoy AgendaBot 🤖✨\n\nEstoy aquí para ayudarte a organizar tus citas, tareas y recordatorios de forma fácil y sin enredos.\n\n🕒 Puedes escribirme en cualquier momento.\n👉 Para continuar, solo escribe el número de la opción que quieras usar.\n\n📋 Menú principal\n0️⃣ Ayuda\n1️⃣ Agenda (citas)\n2️⃣ Tareas\n3️⃣ Recordatorios\n4️⃣ Hábitos\n5️⃣ Listas\n6️⃣ Reportes\n7️⃣ Configuración\n8️⃣ Administrador\n9️⃣ Salir\n\n🚀 Elige una opción y empezamos",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5824,
+        14928
+      ],
+      "id": "e6d4c3bf-c91e-416d-9017-cb1333a06c88",
+      "name": "Menú Principal34",
+      "webhookId": "fb324b51-9ffb-4a97-81b3-3eef0fb617f1",
+      "credentials": {
+        "telegramApi": {
+          "id": "ypnhxurBHlbgesip",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1173250165,
+          "mode": "list",
+          "cachedResultName": "estado_usuario",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LNz82mXSrIrIRHljBG4tocZuwK1aUQPP4UMAg2lafKw/edit#gid=1173250165"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+            "paso_actual": "0",
+            "pantalla_actual": "MENU_SELECCION",
+            "timestamp_ultima_inteacción": "={{ new Date().toISOString() }}"
+          },
+          "matchingColumns": [
+            "telegram_user"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales",
+              "displayName": "datos_parciales",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "timestamp_ultima_inteacción",
+              "displayName": "timestamp_ultima_inteacción",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        5552,
+        14944
+      ],
+      "id": "2acb333c-de46-4741-a91f-345569fcbfe4",
+      "name": "AYUDA6",
+      "credentials": {
+        "googleApi": {
+          "id": "9iDP2YtGpxr7iF76",
+          "name": "Google Sheets account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -26097,7 +27264,6 @@
             "index": 0
           }
         ],
-        [],
         [
           {
             "node": "If9",
@@ -26126,6 +27292,7 @@
             "index": 0
           }
         ],
+        [],
         [
           {
             "node": "Veri OPC16",
@@ -26300,7 +27467,13 @@
             "index": 0
           }
         ],
-        [],
+        [
+          {
+            "node": "If39",
+            "type": "main",
+            "index": 0
+          }
+        ],
         [
           {
             "node": "Saliendo",
@@ -30066,6 +31239,13 @@
             "type": "main",
             "index": 0
           }
+        ],
+        [
+          {
+            "node": "AYUDA5",
+            "type": "main",
+            "index": 0
+          }
         ]
       ]
     },
@@ -30466,14 +31646,185 @@
           }
         ]
       ]
+    },
+    "If39": {
+      "main": [
+        [
+          {
+            "node": "Menú Admin",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No admin1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Menú Admin": {
+      "main": [
+        [
+          {
+            "node": "Menú Config1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No admin1": {
+      "main": [
+        [
+          {
+            "node": "Menú Principal30",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AYUDA5": {
+      "main": [
+        [
+          {
+            "node": "Menú Principal33",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Veri OPC18": {
+      "main": [
+        [
+          {
+            "node": "OPC Invalido24",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "AYUDA3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AYUDA4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AYUDA6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hasta Luego6": {
+      "main": [
+        [
+          {
+            "node": "Menú Principal31",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hasta Luego7": {
+      "main": [
+        [
+          {
+            "node": "Menú Principal32",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AYUDA3": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AYUDA4": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet3": {
+      "main": [
+        [
+          {
+            "node": "Hasta Luego6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet4": {
+      "main": [
+        [
+          {
+            "node": "Hasta Luego7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AYUDA6": {
+      "main": [
+        [
+          {
+            "node": "Menú Principal34",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
-  "active": true,
+  "active": false,
   "settings": {
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "a4e12e5a-6646-4d98-a3eb-773e5fe78600",
+  "versionId": "88b73a18-5fc5-4459-bbbb-227a54a10736",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "9df5d91811fdb3d73aea278702e0fafc82772a4c193fde8132a4495c1e55230c"
